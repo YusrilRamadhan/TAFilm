@@ -32,7 +32,7 @@
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="136dp"
+                android:layout_height="wrap_content"
 
                 android:layout_weight="0.29"
                 android:text="Perkembangan inovasi kamera kemudian memunculkan film film yang pertama dibuat di dunia. Adalah
@@ -40,7 +40,9 @@
                 memotret gambar diam saja. Era sinematografi pun dimulai dengan diciptakannya film dokumenter singkat yang pertama
                 kali di dunia oleh Lumiere bersaudara. Film pertama itu berjudul Workers Leaving the Lumiere's Factory dan hanya berdurasi
                 beberapa detik saja. Selain itu ceritanya hanya menggambarkan para pekerja pabrik yang pulang dan meninggalkan tempat kerja mereka di pabrik Lumiere. Meski begitu film ini tercatat dalam sejarah sebagai film pertama yang ditayangkan dan diputar di Boulevard des Capucines di kota Paris, Prancis. Tanggal pemutaran film itu pada tanggal 28 Desember 1895 kemudian ditetapkan sebagai hari lahirnya sinematografi."
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -48,14 +50,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.01"
                 android:text="Sejak itu pun muncul film film pendek lain yang dibuat. Awalnya pembuatan film memang tidak memiliki tujuan dan alur cerita yang jelas dan kontinyu. Para pembuat film hanya merekam gambar dan keadaan di sekeliling mereka. Namun kemudian ide pembuatan film mulai merambah dunia industri. Film film pun mulai dibuat dengan lebih berkonsep dan memiliki alur cerita yang jelas. Saat itu memang layar film masih hitam-putih dan juga tidak didukung audio suara. Oleh karena itu saat pemutaran film biasanya ada pemain musik yang mengiringi secara langsung sebagai efek suara."
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.01"
-                android:text="Memasuki abad 20, perkembangan film mulai berkembang dengan pesat. Dimulai dengan pengembangan audio suara. Film film pun mulai dibuat dengan durasi yang lebih panjang. Konsep dan tema cerita juga mulai meluas dari berbagai genre, mulai dari film komedi, romantis, petualangan hingga perang. Berbagai perusahaan dan studio film pun mulai banyak dibuat untuk keperluan bisnis dan hiburan di zaman tersebut.  Di era 1900-an dan 1910-an, film film produksi asal Eropa, terutama dari negara Prancis, Italia atau Jerman mencuri perhatian dan mampu populer di seluruh dunia. Baru di era 1920-an industri film Amerika Serikat produksi Hollywood mulai dibuat dan langsung populer. Industri film Hollywood ini kemudian menjadi industri film paling populer yang menghadirkan film film berkualitas hingga sekarang.   Itulah sedikit informasi mengenai sejarah film dunia dari masa ke masa sejak awal hingga sekarang. Pengembangan film memang memiliki sejarah panjang sejak pertama kali dibuat. Dan kini memasuki zaman modern, dunia film kian berkembang secara drastis dengan adanya kemajuan teknologi yang semakin canggih yang dapat membantu dalam produksi film. Semoga info tersebut bisa bermanfaat. " />
+                android:text="Memasuki abad 20, perkembangan film mulai berkembang dengan pesat. Dimulai dengan pengembangan audio suara. Film film pun mulai dibuat dengan durasi yang lebih panjang. Konsep dan tema cerita juga mulai meluas dari berbagai genre, mulai dari film komedi, romantis, petualangan hingga perang. Berbagai perusahaan dan studio film pun mulai banyak dibuat untuk keperluan bisnis dan hiburan di zaman tersebut.  Di era 1900-an dan 1910-an, film film produksi asal Eropa, terutama dari negara Prancis, Italia atau Jerman mencuri perhatian dan mampu populer di seluruh dunia. Baru di era 1920-an industri film Amerika Serikat produksi Hollywood mulai dibuat dan langsung populer. Industri film Hollywood ini kemudian menjadi industri film paling populer yang menghadirkan film film berkualitas hingga sekarang.   Itulah sedikit informasi mengenai sejarah film dunia dari masa ke masa sejak awal hingga sekarang. Pengembangan film memang memiliki sejarah panjang sejak pertama kali dibuat. Dan kini memasuki zaman modern, dunia film kian berkembang secara drastis dengan adanya kemajuan teknologi yang semakin canggih yang dapat membantu dalam produksi film. Semoga info tersebut bisa bermanfaat. "
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
 
         </LinearLayout>
 
