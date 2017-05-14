@@ -42,7 +42,7 @@
                 beberapa detik saja. Selain itu ceritanya hanya menggambarkan para pekerja pabrik yang pulang dan meninggalkan tempat kerja mereka di pabrik Lumiere. Meski begitu film ini tercatat dalam sejarah sebagai film pertama yang ditayangkan dan diputar di Boulevard des Capucines di kota Paris, Prancis. Tanggal pemutaran film itu pada tanggal 28 Desember 1895 kemudian ditetapkan sebagai hari lahirnya sinematografi."
                 android:textAlignment="center"
                 android:textColor="@android:color/background_dark"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textView3"
