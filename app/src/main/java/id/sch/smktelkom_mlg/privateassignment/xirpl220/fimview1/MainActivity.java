@@ -1,6 +1,9 @@
 package id.sch.smktelkom_mlg.privateassignment.xirpl220.fimview1;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -26,14 +29,21 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        Thread thread = new Thread(new Runnable() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void run() {
+                SharedPreferences getPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+                boolean isFirstStart = getPrefs.getBoolean("FirstStart", true);
+                if(isFirstStart){
+                    startActivity(new Intent(MainActivity.this, MyIntro.class));
+                    SharedPreferences.Editor e = getPrefs.edit();
+                    e.putBoolean("FirstStart",false);
+                    e.apply();
+                }
             }
         });
+
+        thread.start();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -87,22 +97,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_coming) {
             fragment = new SoonFragment();
             setTitle("Coming Soon Film");
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_popular) {
             fragment = new PopularFragment();
             setTitle("Popular Film");
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_history) {
+            fragment = new HistoryFragment();
+            setTitle("History Film");
         }
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, fragment).commitNow();
