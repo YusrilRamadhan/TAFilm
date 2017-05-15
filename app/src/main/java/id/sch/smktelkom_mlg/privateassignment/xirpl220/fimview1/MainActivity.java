@@ -54,6 +54,9 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        changePage(R.id.nav_popular);
+        navigationView.setCheckedItem(R.id.nav_popular);
+
 
     }
 
@@ -92,29 +95,38 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        Fragment fragment = null;
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        changePage(id);
+        return true;
+    }
+
+    private void changePage(int id)
+    {
+        Fragment fragment = null;
 
         if (id == R.id.nav_coming) {
             fragment = new SoonFragment();
             setTitle("Coming Soon Film");
+
             // Handle the camera action
         } else if (id == R.id.nav_popular) {
             fragment = new PopularFragment();
             setTitle("Popular Film");
 
+
         } else if (id == R.id.nav_history) {
             fragment = new HistoryFragment();
             setTitle("History Film");
+
         }
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, fragment).commitNow();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
 
     }
 
