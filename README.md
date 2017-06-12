@@ -1,17 +1,17 @@
 # Project-fimView-
 
-1. Nama Applikasi : FimView <br> 
-2. Link APK : https://github.com/nofitaaaa/Project-fimView-/blob/master/app-release.apk <br>
+1. Nama Applikasi : TAFilm <br> 
+2. Link APK : https://github.com/YusrilRamadhan/TAFilm <br>
 3. Identitas Siswa : <br>
-    - Nama Lengkap : Nofita Mahfudiyah <br>
-    - Kelas / NO   : XI RPL 2 / 20 <br>
-    - NIS          : 4791 / 1510070 <br>
+    - Nama Lengkap : Yusril Ilham Ramadhan <br>
+    - Kelas / NO   : XI RPL 2 / 34 <br>
+    - NIS          : 4857/1576.070 <br>
     - Angkatan     : 24 <br>
           SMK TELKOM MALANG <br>
 4. Alamat API : https://www.themoviedb.org/documentation/api <br>
 5. Jenis Navigasi : Navigasi Drawer <br>
 6. Library : SQLite dasar <br>
-7. Aplikasi FimView ini ditujukan orang yang suka update tentang dunia film, <br>
+7. Aplikasi TAFilm ini ditujukan orang yang suka update tentang dunia film, <br>
  terutama pada kalangan remaja. Terdapat fitur comingsoon. Cominngsoon ini <br>
  agar pengguna mengetahui film-film apa saja yang akan di realease. <br>
  Selain itu, ada juga fitur untuk film popular. Jadi pengguna bisa mengetahui <br>
